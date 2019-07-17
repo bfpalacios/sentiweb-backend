@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.concretepage.dao.IEncuestaDAO;
+import com.concretepage.entity.Area;
 import com.concretepage.entity.Encuesta;
  
 
@@ -23,7 +24,7 @@ public class EncuestaService implements IEncuestaService{
 		return encuestaDAO.getEncuestaByFlag( flagSenti,  idEnc, idPreg);
 	}
 	@Override
-	public List<Encuesta> getEncuestaByPendiente(long idArea, long idEnc) {
+	public List<Area> getEncuestaByPendiente(long idArea, long idEnc) {
 		// TODO Auto-generated method stub
 		return encuestaDAO.getEncuestaByPendiente(idArea, idEnc);
 	}

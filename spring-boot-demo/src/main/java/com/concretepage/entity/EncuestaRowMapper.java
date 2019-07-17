@@ -14,8 +14,7 @@ public class EncuestaRowMapper implements RowMapper<Encuesta> {
 		encuesta.setIdRpta(row.getInt("id_rpta"));
 		encuesta.setIdEnc(row.getInt("id_enc"));
 		encuesta.setIdPreg(row.getInt("id_preg"));
-		encuesta.setDescRpta(row.getString("desc_rpta")); 
-		encuesta.setCantidad(row.getInt("contador")); 
+		encuesta.setDescRpta(row.getString("desc_rpta"));  
 		return encuesta;
 	}
 
